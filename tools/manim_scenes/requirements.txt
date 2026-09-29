@@ -1,0 +1,4 @@
+manim==0.21.*
+numpy
+pytest
+nbformat

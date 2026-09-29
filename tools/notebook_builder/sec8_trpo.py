@@ -1,11 +1,14 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
 CELLS.append(md(r"""
 ---
 # Part 8 · TRPO: trust region policy optimisation
+"""))
+CELLS.append(video(8))
 
+CELLS.append(md(r"""
 ## The step-size problem
 
 In supervised learning a too-large step just makes the loss go up for one iteration. In on-policy RL

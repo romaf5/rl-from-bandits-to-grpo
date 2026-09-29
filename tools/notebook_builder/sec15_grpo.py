@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -30,6 +30,7 @@ z-scores, so a lone correct answer among 8 failures gets a huge advantage.
 and the reasoning chains grew on their own ("aha moments"). The lesson was that the algorithm matters
 less than having a verifiable reward and enough compute.
 """))
+CELLS.append(video(15))
 
 CELLS.append(code(r"""
 def group_advantages(R, G, normalize_std=True, eps=1e-4):

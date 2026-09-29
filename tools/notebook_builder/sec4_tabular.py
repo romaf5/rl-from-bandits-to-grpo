@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -22,6 +22,7 @@ reused idea in RL; it will be the "advantage" in actor-critic methods and the pe
 Let's compare both for *prediction* (estimating $V^\pi$ for the random policy) against the exact answer
 from Part 1.
 """))
+CELLS.append(video(4))
 
 CELLS.append(code(r"""
 def run_episode(env, pi, max_steps=200):

@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -10,7 +10,10 @@ Reinforcement learning is learning **what to do** from **evaluative feedback**: 
 tell the agent the correct action (that would be supervised learning), it only tells it how good the
 outcome was. The agent must discover good behaviour by trial and error, and it must deal with
 *delayed* consequences: an action now can pay off much later.
+"""))
+CELLS.append(video(1))
 
+CELLS.append(md(r"""
 ## The agent–environment loop
 
 At every step $t$ the agent sees a state $s_t$, picks an action $a_t$, and receives a reward $r_{t+1}$ and

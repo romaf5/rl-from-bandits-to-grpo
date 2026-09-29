@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -17,7 +17,10 @@ In practice, combining **bootstrapping**, **off-policy** updates and **function 
 2. **Target network.** Compute the target $r + \gamma \max_{a'} Q(s', a'; \theta^-)$ with a *slowly moving copy*
    $\theta^-$ (refreshed only every 10,000 updates in the 2015 Nature paper; we use the now-common Polyak average
    $\theta^- \leftarrow (1-\tau)\theta^- + \tau\theta$), so the regression target stops jumping under our feet.
+"""))
+CELLS.append(video(5))
 
+CELLS.append(md(r"""
 ## The environment: CartPole
 
 A pole hinged on a cart. The observation is $[x, \dot x, \theta, \dot \theta]$, the actions are push

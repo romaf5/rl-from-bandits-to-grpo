@@ -1,11 +1,14 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
 CELLS.append(md(r"""
 ---
 # Part 7 · Actor-critic and generalised advantage estimation
+"""))
+CELLS.append(video(7))
 
+CELLS.append(md(r"""
 ## Baselines
 
 Subtracting a **baseline** $b(s_t)$ from the return does not change the expected gradient:

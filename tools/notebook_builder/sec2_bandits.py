@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -26,6 +26,7 @@ Three classic strategies:
 * **Optimistic initialisation**: start all $Q(a)$ high, so every arm looks disappointing after a try and
   the greedy agent explores by itself.
 """))
+CELLS.append(video(2))
 
 CELLS.append(code(r"""
 class Bandit:

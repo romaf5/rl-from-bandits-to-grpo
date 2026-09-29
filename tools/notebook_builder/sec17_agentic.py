@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -26,7 +26,10 @@ environment**, not actions. That changes four things in the implementation:
    open research area.
 4. **Rollouts are long, slow and asynchronous**, so training is partially off-policy, which is what the
    importance-sampling corrections at the end of Part 16 are for.
+"""))
+CELLS.append(video(17))
 
+CELLS.append(md(r"""
 ## A calculator tool for our toy model
 
 We give the model a `<call>` token. When it emits one, the environment appends `<obs> digits <obs>` with

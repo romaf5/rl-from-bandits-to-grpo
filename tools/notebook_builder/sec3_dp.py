@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -30,6 +30,7 @@ Alternate two steps until the policy stops changing:
 Skip the full evaluation and apply the *optimality* operator directly:
 $V(s) \leftarrow \max_a \sum_{s'} p(s'|s,a)[r + \gamma V(s')]$. Also a γ-contraction, converging to $V^*$.
 """))
+CELLS.append(video(3))
 
 CELLS.append(code(r"""
 def policy_evaluation(env, pi, gamma=None, theta=1e-8, max_sweeps=10_000, V0=None):

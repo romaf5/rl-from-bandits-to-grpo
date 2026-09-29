@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -10,7 +10,10 @@ Value-based methods learn $Q$ and act greedily. **Policy gradient** methods skip
 optimise the policy $\pi_\theta(a|s)$ directly by gradient ascent on the expected return
 $J(\theta) = \mathbb E_{\tau \sim \pi_\theta}[R(\tau)]$. This handles continuous actions, stochastic
 optimal policies, and, crucially for Parts 10–17, policies that are *language models*.
+"""))
+CELLS.append(video(6))
 
+CELLS.append(md(r"""
 ## The policy gradient theorem
 
 Write $p_\theta(\tau) = p(s_0) \prod_t \pi_\theta(a_t|s_t)\, p(s_{t+1}|s_t, a_t)$. Then, using the

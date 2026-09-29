@@ -22,6 +22,7 @@ Every part has **quiz cells** (`quiz(...)` / `answer(...)`) and **coding exercis
 
 **Google Colab / Drive:** upload the `.ipynb`, open it with Colab, `Runtime → Run all`.
 Everything needed (`numpy`, `matplotlib`, `torch`) is preinstalled there.
+The companion videos play in local Jupyter only; in Colab the `<video>` cells show as empty players.
 
 **Mac laptop (CPU is fine):**
 
@@ -35,6 +36,11 @@ A full top-to-bottom run takes roughly 10–15 minutes on a laptop CPU. The heav
 `N_SEEDS` or `steps` setting at the top you can lower.
 
 The notebook ships with outputs already executed, so you can also read it like a book first.
+
+## Companion videos
+
+Every Part opens with a short Manim animation (`videos/partNN.mp4`) that plays inline in local Jupyter.
+Sources and render instructions: [`tools/manim_scenes/`](tools/manim_scenes/README.md).
 
 ## Regenerating the notebook
 

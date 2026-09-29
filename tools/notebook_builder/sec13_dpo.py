@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -10,7 +10,10 @@ PPO-RLHF is a lot of machinery just to nudge a model toward what humans prefer. 
 2023) noticed that the RLHF objective has a *closed-form* solution, and that plugging it back into the
 Bradley–Terry model gives a loss you can minimise on preference pairs directly. No reward model, no
 sampling, no critic.
+"""))
+CELLS.append(video(13))
 
+CELLS.append(md(r"""
 ## The derivation in four lines
 
 1. The KL-regularised objective $\max_\pi \mathbb E_{y\sim\pi}[r(x,y)] - \beta\,\mathrm{KL}(\pi\|\pi_{\text{ref}})$

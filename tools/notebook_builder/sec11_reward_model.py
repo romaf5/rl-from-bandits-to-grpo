@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -14,7 +14,10 @@ $$P(y_w \succ y_l \mid x) = \sigma\big(r_\phi(x, y_w) - r_\phi(x, y_l)\big), \qq
 \mathcal L_{\text{RM}} = -\mathbb E\big[\log \sigma\big(r_\phi(x, y_w) - r_\phi(x, y_l)\big)\big].$$
 
 The reward model is usually the LM itself (or a copy of it) with a scalar head on the last token.
+"""))
+CELLS.append(video(11))
 
+CELLS.append(md(r"""
 ## A synthetic annotator
 
 We simulate human raters on our arithmetic task. The rater prefers the correct answer 85% of the time

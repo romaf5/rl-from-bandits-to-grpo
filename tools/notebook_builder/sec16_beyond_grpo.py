@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -71,6 +71,7 @@ batch-level normalisation) as the most scalable loss in its comparison.
 The names differ; the dials are the same. Let's build one loss function with all of them and run the
 variants side by side.
 """))
+CELLS.append(video(16))
 
 CELLS.append(code(r"""
 @dataclass

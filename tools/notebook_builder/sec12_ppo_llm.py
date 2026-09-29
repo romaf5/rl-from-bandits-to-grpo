@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -21,7 +21,10 @@ Implemented with PPO over tokens:
 
 That is four large models in memory at once (policy, reference, critic, reward model), which is the main
 reason critic-free methods (Parts 14–16) took over for reasoning models.
+"""))
+CELLS.append(video(12))
 
+CELLS.append(md(r"""
 ## Building it
 """))
 

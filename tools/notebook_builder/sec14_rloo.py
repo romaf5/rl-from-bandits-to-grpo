@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -13,7 +13,10 @@ Ahmadian et al. (2024, "Back to Basics") argued that a well-chosen baseline plus
 good as PPO for LLMs and far simpler. The sequence-level policy gradient is
 
 $$\nabla_\theta J = \mathbb E\Big[(R(y) - b)\, \nabla_\theta \log \pi_\theta(y|x)\Big], \qquad \log\pi_\theta(y|x) = \sum_t \log \pi_\theta(y_t \mid x, y_{<t}).$$
+"""))
+CELLS.append(video(14))
 
+CELLS.append(md(r"""
 ## RLOO: REINFORCE leave-one-out
 
 Sample $K$ responses $y_1..y_K$ for the same prompt and use the **mean of the other $K-1$ rewards** as the

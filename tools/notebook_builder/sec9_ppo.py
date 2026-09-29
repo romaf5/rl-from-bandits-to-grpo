@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -26,6 +26,7 @@ gradient steps on the same batch** (several epochs of minibatches). That is the 
 efficiency compared to A2C, and the whole reason it became the default for everything from robotics to
 RLHF.
 """))
+CELLS.append(video(9))
 
 CELLS.append(code(r"""
 ratio = np.linspace(0.5, 1.5, 300); eps = 0.2

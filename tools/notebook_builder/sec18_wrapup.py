@@ -1,11 +1,14 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
 CELLS.append(md(r"""
 ---
 # Part 18 · Wrap-up: the map
+"""))
+CELLS.append(video(18))
 
+CELLS.append(md(r"""
 ## One table
 
 | Algorithm | Family | On/off-policy | Learns | Baseline / critic | Key trick | Where you meet it |

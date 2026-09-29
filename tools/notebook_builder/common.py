@@ -50,3 +50,11 @@ def exercise_cells(eid, task, starter, tests, solution, fn_name):
     starter_cell = code(starter)
     starter_cell.metadata["exercise_solution"] = _b64(solution)
     return [md(task), starter_cell, code(check_src)]
+
+
+def video(n):
+    """Companion animation for Part n; the notebook lives next to videos/ so the path is relative."""
+    cell = md(f'<video src="videos/part{n:02d}.mp4" controls width="100%"></video>\n\n'
+              f'*Companion animation for Part {n}. Rendered with Manim from `tools/manim_scenes/`.*')
+    cell.metadata["companion_video"] = n
+    return cell

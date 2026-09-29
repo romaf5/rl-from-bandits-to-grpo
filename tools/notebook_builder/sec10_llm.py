@@ -1,4 +1,4 @@
-from common import md, code, quiz_cells, exercise_cells
+from common import video, md, code, quiz_cells, exercise_cells
 
 CELLS = []
 
@@ -27,7 +27,10 @@ Two things are different from CartPole and shape every algorithm in Parts 11–1
    sensible text. RL's job is to *sharpen* and *steer* that policy, not to learn from scratch, and
    drifting too far from the starting point destroys capabilities. Hence the ubiquitous **KL penalty to a
    reference model**.
+"""))
+CELLS.append(video(10))
 
+CELLS.append(md(r"""
 ## The post-training pipeline
 
 The classic RLHF recipe (Ouyang et al., 2022, InstructGPT) has three stages after pretraining.
